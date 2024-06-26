@@ -13,16 +13,15 @@
    </div>
 
    <script>
-      
       Vue.directive("changestyle",{
          bind(e1,binding, vnode) {
-            console.log(e1);
-            console.log(binding.value.color);
-            console.log(vnode);
+            console.log("e1: "+e1);
+            console.log("binding: "+binding.value.color);
+            console.log("vnode: " + vnode);
             e1.style.color=binding.value.color;
-            e1.style.fontSize = "30px";
+            e1.style.fontSize = "20px";
          }
-      });
+      }); //react native,flutter|express,nodejs,expressjs ios swift, android studio 
       var vm = new Vue({
          el: '#databinding',
          data: {
